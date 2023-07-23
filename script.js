@@ -7,7 +7,7 @@ const todos = JSON.parse(localstorage.getItem('todos'))
 if(todos){
     todos.forEach(todo => addTodo(todo))}
 
-form.addEventListener('submit',(e)=>{e.preventDefault() 
+form.addEventListener('submit',(e)=>{e.preventDefault()
     addTodo()})
 
 function addTodo(todo){
